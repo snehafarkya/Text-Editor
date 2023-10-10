@@ -32,7 +32,12 @@ const TextEditor = () => {
     console.log("content---->", content);
   };
 
+  // const handleClick = (e)=>{
+  //   var card = document.createElement('div').innerHTML = e
+  //   console.log(e)
+  // }
   return (
+    <>
     <div className="mt-10">
       <h1 style={{ textAlign: "center" }} className=" text-blue-900 font-bold text-2xl pb-10 uppercase" >Write your first blog here</h1>
       <div className="flex justify-center flex-wrap mx-auto md:w-[650px] w-[300px] " >
@@ -47,7 +52,11 @@ const TextEditor = () => {
         >
         </ReactQuill>
       </div>
+      
+
     </div>
+      {/* <button className="px-4 py-2 bg-slate-200 cursor-pointer mt-16 hover:bg-slate-300" onClick={handleClick}>Save</button> */}
+      </>
   );
 
 }
