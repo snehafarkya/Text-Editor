@@ -33,17 +33,17 @@ const TextEditor = () => {
   };
 
   return (
-    <div >
-      <h1 style={{ textAlign: "center" }} >Write your first blog here</h1>
-      <div className="flex justify-center flex-wrap mx-auto" style={{width:'650px',margin:'auto'}}>
+    <div className="mt-10">
+      <h1 style={{ textAlign: "center" }} className=" text-blue-900 font-bold text-2xl pb-10 uppercase" >Write your first blog here</h1>
+      <div className="flex justify-center flex-wrap mx-auto md:w-[650px] w-[300px] " >
         <ReactQuill
           theme="snow"
           modules={modules}
           formats={formats}
           placeholder="write your content ...."
           onChange={handleProcedureContentChange}
-          // className="flex flex-wrap"
-          style={{height:'90vh',width:'650px'}}
+          className="rounded-lg"
+          style={{height:'50vh',width:'650px'}}
         >
         </ReactQuill>
       </div>
