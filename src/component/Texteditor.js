@@ -42,7 +42,7 @@ const TextEditor = () => {
           formats={formats}
           placeholder="write your content ...."
           onChange={handleProcedureContentChange}
-          className="flex flex-wrap"
+          // className="flex flex-wrap"
           style={{height:'200px',width:'650px'}}
         >
         </ReactQuill>
