@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.ql-container{
+  border: #282c34 4px solid;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+}
+.ql-toolbar{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding-top: 20px;
+}
