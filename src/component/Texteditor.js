@@ -2,6 +2,7 @@ import React from "react";
 import 'quill/dist/quill.snow.css'
 import ReactQuill, { Quill } from 'react-quill'
 import { useState } from "react";
+import { saveAs } from 'file-saver';
 import ImageResize from 'quill-image-resize-module-react';
 Quill.register('modules/imageResize', ImageResize);
 
@@ -58,6 +59,15 @@ console.log(a)
   //   var card = document.createElement('div').innerHTML = e
   //   console.log(e)
   // }
+
+  const handleDownload = () => {
+    // Create a Blob containing your card data (for example, plain text)
+    const cardData = document.getElementById('card').textContent
+    const blob = new Blob([cardData], { type: "text/plain;charset=utf-8" });
+
+    // Use FileSaver to trigger the download
+    saveAs(blob, 'card.txt');
+  };
   return (
     <>
     <div className="mt-10">
@@ -90,10 +100,9 @@ console.log(a)
       {show ?
       
       <div className="grid place-items-center mx-auto">
-        <a href="#card">
-      <div id="card" className="bg-blue-100 mx-8 p-8  rounded-xl shadow-xl my-2 "></div>
+      <div id="card" className="bg-blue-100 mx-8 p-8  rounded-xl shadow-xl my-2 mb-8 "></div>
       {/* <p onClick={(e)=>navigator.clipboard.writeText(window.location.href)}>Share</p> */}
-      </a>
+      <a href="#card" download={true} onClick={handleDownload}>download</a>
       </div>
       :null}
     </div>
