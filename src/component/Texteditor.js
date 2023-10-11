@@ -75,7 +75,7 @@ const TextEditor = () => {
       <h1 style={{ textAlign: "center" }} className=" text-blue-900 font-bold text-2xl uppercase " >Preview your blog here</h1>
 
 
-      <div className="md:w-[650px] w-[300px] mt-10 rounded-2xl mx-auto  border-blue-900 border-2 shadow-xl" id="result">
+      <div className="md:w-[650px] w-[300px] mt-10 rounded-md mx-auto p-1  border-blue-900 border-2 shadow-xl" id="result">
       </div>
       </div>
 
