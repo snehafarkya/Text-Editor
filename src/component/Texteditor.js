@@ -82,13 +82,13 @@ console.log(a)
 
       <div className="md:w-[650px] w-[300px] mt-10 rounded-md mx-auto p-1 shadow-lg" id="result">
       </div>
-      <button className="px-4 py-2 bg-blue-900 cursor-pointer mt-8 text-white rounded-lg  hover:bg-slate-300 " onClick={handleClick}>Save</button>
+      <button className="px-4 py-2 bg-blue-900 cursor-pointer mt-8 text-white rounded-md hover:bg-blue-800 transition ease-in-out duration-300 hover:scale-[0.98] font-semibold" onClick={handleClick}>Save</button>
       </div>
       
       </div>
       {show ?
       <div className="grid place-items-center mx-auto">
-      <div id="card" className="bg-pink-100 mx-4 p-4  rounded-xl shadow-xl my-2 "></div>
+      <div id="card" className="bg-blue-100 mx-8 p-8  rounded-xl shadow-xl my-2 "></div>
       </div>
       :null}
     </div>
