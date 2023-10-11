@@ -8,7 +8,7 @@ const TextEditor = () => {
     toolbar: [
       [{ size: ["small", false, "large", "huge"] }],
       ["bold", "italic", "underline", "strike", "blockquote"],
-      [{ list: "ordered" }, { list: "bullet" }],
+      // [{ list: "ordered" }, { list: "bullet" }],
       ["link", "image"],
       [
         { list: "ordered" },
@@ -30,6 +30,7 @@ const TextEditor = () => {
 
   const handleProcedureContentChange = (content) => {
     console.log("content---->", content);
+  
   };
 
   // const handleClick = (e)=>{
@@ -44,6 +45,7 @@ const TextEditor = () => {
         <ReactQuill
           theme="snow"
           modules={modules}
+          // value={content}
           formats={formats}
           placeholder="write your content ...."
           onChange={handleProcedureContentChange}
