@@ -36,17 +36,29 @@
     transform: rotate(360deg);
   }
 }
+.quill{
+  /* box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.395); */
+
+}
 
 .ql-container{
-  border: #282c34 4px solid;
+  border: darkblue solid 2px  !important;
+  border-top: none !important;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-
+  height: 80%;
 }
 .ql-toolbar{
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   padding-top: 20px;
-  background: #c7d7dc;
-  
+  background: rgb(219 234 254);
+  border: none !important;
+  border: darkblue solid 2px  !important;
+
+}
+.ql-editor{
+  height: inherit;
+}
+.ql-toolbar .ql-snow{
 }

@@ -54,8 +54,10 @@ const TextEditor = () => {
   return (
     <>
     <div className="mt-10">
-      <h1 style={{ textAlign: "center" }} className=" text-blue-900 font-bold text-2xl pb-10 uppercase" >Write your first blog here</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 mx-6 gap-y-10">
       <div className="flex justify-center flex-wrap mx-auto md:w-[650px] w-[300px] " >
+      <h1 style={{ textAlign: "center" }} className=" text-blue-900 font-bold text-2xl pb-10 uppercase" >Write your first blog here</h1>
+
         <ReactQuill
           theme="snow"
           modules={modules}
@@ -63,16 +65,23 @@ const TextEditor = () => {
           formats={formats}
           placeholder="write your content ...."
           onChange={handleProcedureContentChange}
-          className="rounded-lg"
+          className="rounded-lg "
           style={{height:'50vh',width:'650px'}}
         >
         </ReactQuill>
       </div>
-      
+      <div className="">
+      <h1 style={{ textAlign: "center" }} className=" text-blue-900 font-bold text-2xl uppercase " >Preview your blog here</h1>
+
+
+      <div className="w-[80%] mt-10 rounded-2xl mx-auto bg-blue-50 pt-4 h-[100%] border-blue-900 border-2 shadow-xl" id="result">
+      </div>
+      </div>
+
+      </div>
 
     </div>
       {/* <button className="px-4 py-2 bg-slate-200 cursor-pointer mt-16 hover:bg-slate-300 " onClick={()=>setShow(true)}>Save</button> */}
-           <div className="w-[60%] justify-center mt-20 mx-auto bg-gray-200 " id="result"></div>
 
       
       </>
