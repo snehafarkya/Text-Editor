@@ -44,9 +44,14 @@ const TextEditor = () => {
     // res.style.display = "none"
     
   };
-  // const handleClick = (content)=>{
+  const handleClick = (content)=>{
+ setShow(true)
 
-  // }
+    var a = document.getElementById('result')
+console.log(a)
+ var card = document.getElementById('card')
+ card.innerHTML = a.innerHTML
+  }
 
   // const handleClick = (e)=>{
   //   var card = document.createElement('div').innerHTML = e
@@ -55,7 +60,7 @@ const TextEditor = () => {
   return (
     <>
     <div className="mt-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 mx-6 gap-y-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 mx-6 gap-y-10 place-content-start place-items-start">
       <div className="flex justify-center flex-wrap mx-auto md:w-[650px] w-[300px] " >
       <h1 style={{ textAlign: "center" }} className=" text-blue-900 font-bold text-2xl pb-10 uppercase" >Write your first blog here</h1>
 
@@ -64,9 +69,9 @@ const TextEditor = () => {
           modules={modules}
           // value={content}
           formats={formats}
-          placeholder="write your content ...."
+          placeholder="Write your content ...."
           onChange={handleProcedureContentChange}
-          className="rounded-lg "
+          className="rounded-sm "
           style={{height:'50vh',width:'650px'}}
         >
         </ReactQuill>
@@ -77,10 +82,15 @@ const TextEditor = () => {
 
       <div className="md:w-[650px] w-[300px] mt-10 rounded-md mx-auto p-1  border-blue-900 border-2 shadow-xl" id="result">
       </div>
+      <button className="px-4 py-2 bg-blue-400 cursor-pointer mt-16 rounded-lg  hover:bg-slate-300 " onClick={handleClick}>Save</button>
       </div>
-
+      
       </div>
-
+      {show && (
+      <div className="grid place-items-center mx-auto">
+      <div id="card" className="bg-pink-300 p-4  rounded-xl shadow-xl my-2 "></div>
+      </div>
+      )}
     </div>
       {/* <button className="px-4 py-2 bg-slate-200 cursor-pointer mt-16 hover:bg-slate-300 " onClick={()=>setShow(true)}>Save</button> */}
 

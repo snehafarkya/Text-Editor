@@ -44,13 +44,13 @@
 .ql-container{
   border: darkblue solid 2px  !important;
   border-top: none !important;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   height: 70% !important;
 }
 .ql-toolbar{
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   padding-top: 20px;
   background: rgb(219 234 254);
   border: none !important;
