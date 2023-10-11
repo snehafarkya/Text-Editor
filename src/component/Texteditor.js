@@ -1,15 +1,16 @@
 import React from "react";
 import 'quill/dist/quill.snow.css'
 import ReactQuill from 'react-quill'
+import { useState } from "react";
 
 const TextEditor = () => {
-  
+  const [show,setShow] = useState(false)
   var modules = {
     toolbar: [
       [{ size: ["small", false, "large", "huge"] }],
       ["bold", "italic", "underline", "strike", "blockquote"],
       // [{ list: "ordered" }, { list: "bullet" }],
-      ["link", "image"],
+      ["link", "image", "video"],
       [
         { list: "ordered" },
         { list: "bullet" },
@@ -25,13 +26,19 @@ const TextEditor = () => {
     "header", "height", "bold", "italic",
     "underline", "strike", "blockquote",
     "list", "color", "bullet", "indent",
-    "link", "image", "align", "size",
+    "link", "image", "align", "size", "video"
   ];
 
   const handleProcedureContentChange = (content) => {
     console.log("content---->", content);
-  
+    var res  = document.getElementById('result').innerHTML = content
+    // res.style.display = "none"
+
+    
   };
+  // const handleClick = (content)=>{
+
+  // }
 
   // const handleClick = (e)=>{
   //   var card = document.createElement('div').innerHTML = e
@@ -57,7 +64,11 @@ const TextEditor = () => {
       
 
     </div>
-      {/* <button className="px-4 py-2 bg-slate-200 cursor-pointer mt-16 hover:bg-slate-300" onClick={handleClick}>Save</button> */}
+      <button className="px-4 py-2 bg-slate-200 cursor-pointer mt-16 hover:bg-slate-300 " onClick={()=>setShow(true)}>Save</button>
+      {show && (
+           <div className="w-[60%] justify-center mt-20 mx-auto bg-gray-200 " id="result"></div>
+
+      )}
       </>
   );
 
