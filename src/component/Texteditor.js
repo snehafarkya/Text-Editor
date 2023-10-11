@@ -60,7 +60,7 @@ console.log(a)
   return (
     <>
     <div className="mt-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 mx-6 gap-y-10 place-content-start place-items-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 mx-6 gap-y-10 place-content-start md:place-items-start">
       <div className="flex justify-center flex-wrap mx-auto md:w-[650px] w-[300px] " >
       <h1 style={{ textAlign: "center" }} className=" text-blue-900 font-bold text-2xl pb-10 uppercase" >Write your first blog here</h1>
 
@@ -80,17 +80,17 @@ console.log(a)
       <h1 style={{ textAlign: "center" }} className=" text-blue-900 font-bold text-2xl uppercase " >Preview your blog here</h1>
 
 
-      <div className="md:w-[650px] w-[300px] mt-10 rounded-md mx-auto p-1  border-blue-900 border-2 shadow-xl" id="result">
+      <div className="md:w-[650px] w-[300px] mt-10 rounded-md mx-auto p-1 shadow-lg" id="result">
       </div>
-      <button className="px-4 py-2 bg-blue-400 cursor-pointer mt-16 rounded-lg  hover:bg-slate-300 " onClick={handleClick}>Save</button>
+      <button className="px-4 py-2 bg-blue-900 cursor-pointer mt-8 text-white rounded-lg  hover:bg-slate-300 " onClick={handleClick}>Save</button>
       </div>
       
       </div>
-      {show && (
+      {show ?
       <div className="grid place-items-center mx-auto">
-      <div id="card" className="bg-pink-300 p-4  rounded-xl shadow-xl my-2 "></div>
+      <div id="card" className="bg-pink-100 mx-4 p-4  rounded-xl shadow-xl my-2 "></div>
       </div>
-      )}
+      :null}
     </div>
       {/* <button className="px-4 py-2 bg-slate-200 cursor-pointer mt-16 hover:bg-slate-300 " onClick={()=>setShow(true)}>Save</button> */}
 
