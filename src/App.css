@@ -46,7 +46,7 @@
   border-top: none !important;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  height: 80%;
+  height: 70% !important;
 }
 .ql-toolbar{
   border-top-left-radius: 12px;
