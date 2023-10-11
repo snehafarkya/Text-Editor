@@ -89,6 +89,7 @@ console.log(a)
       {show ?
       <div className="grid place-items-center mx-auto">
       <div id="card" className="bg-blue-100 mx-8 p-8  rounded-xl shadow-xl my-2 "></div>
+      <p onClick={(e)=>navigator.clipboard.writeText(window.location.pathname)}>Share</p>
       </div>
       :null}
     </div>
