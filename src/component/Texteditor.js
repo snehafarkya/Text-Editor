@@ -67,7 +67,6 @@ console.log(a)
   //   // Use FileSaver to trigger the download
   //   // saveAs(blob, 'card.txt');
   //   const url = URL.createObjectURL(blob);
-
   //   const a = document.createElement('a');
   //   a.href = url;
   //   a.download = 'styled_card.html';
