@@ -120,7 +120,6 @@ console.log(a)
       <div id="card" className=" my-2 bg-blue-100 mx-6 p-8  rounded-xl shadow-xl " >
       </div>
       {/* <button onChange={edit}>Edit</button> */}
-
       {/* <p onClick={(e)=>navigator.clipboard.writeText(window.location.href)}>Share</p> */}
       {/* <a href="#card" download={true} onClick={handleDownload}>download</a> */}
       </div>
