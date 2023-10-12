@@ -86,7 +86,7 @@ console.log(a)
   }
   return (
     <>
-    <div className="mt-10">
+    <div className="pt-10">
       <div className="grid grid-cols-1 md:grid-cols-2 mx-6 gap-y-10 place-content-start md:place-items-start">
       <div className="flex justify-center flex-wrap mx-auto md:w-[650px] w-[300px] " >
       <h1 style={{ textAlign: "center" }} className=" text-blue-900 font-bold text-2xl pb-10 uppercase" >Write your first blog here</h1>
