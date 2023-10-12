@@ -63,7 +63,6 @@ console.log(a)
   //   // Create a Blob containing your card data (for example, plain text)
   //   const cardData = document.getElementById('result').innerText
   //   const blob = new Blob([cardData], { type: "text/html" });
-
   //   // Use FileSaver to trigger the download
   //   // saveAs(blob, 'card.txt');
   //   const url = URL.createObjectURL(blob);
