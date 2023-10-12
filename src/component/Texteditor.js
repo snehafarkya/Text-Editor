@@ -126,9 +126,6 @@ console.log(a)
       </div>
       :null}
     </div>
-      {/* <button className="px-4 py-2 bg-slate-200 cursor-pointer mt-16 hover:bg-slate-300 " onClick={()=>setShow(true)}>Save</button> */}
-
-      
       </>
   );
 
