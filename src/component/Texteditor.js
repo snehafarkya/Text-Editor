@@ -47,7 +47,6 @@ const TextEditor = () => {
   };
   const handleClick = (content)=>{
  setShow(true)
-
     var a = document.getElementById('result')
 console.log(a)
  var card = document.getElementById('card')
