@@ -116,8 +116,8 @@ console.log(a)
       </div>
       {show ?
       
-      <div className="grid place-items-center bg-blue-100 w-max p-8  rounded-xl shadow-xl pb-8 mx-auto">
-      <div id="card" className=" my-2 " >
+      <div className="grid place-items-center  pb-8 mx-auto">
+      <div id="card" className=" my-2 bg-blue-100 mx-6 p-8  rounded-xl shadow-xl " >
       </div>
       {/* <button onChange={edit}>Edit</button> */}
 
