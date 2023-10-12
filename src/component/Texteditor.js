@@ -76,7 +76,6 @@ console.log(a)
   //   a.href = url;
   //   a.download = 'styled_card.html';
   //   a.click();
-
   //   URL.revokeObjectURL(url);
   // };
   const edit = ()=>{
