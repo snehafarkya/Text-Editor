@@ -38,7 +38,7 @@ const TextEditor = () => {
   ];
 
   const handleProcedureContentChange = (content) => {
-    console.log("content---->", content);
+    // console.log("content---->", content);
 
     var blog  = document.getElementById('blog').style.display = 'block';
     var res = document.getElementById('result').innerHTML = content
@@ -52,6 +52,9 @@ const TextEditor = () => {
 console.log(a)
  var card = document.getElementById('card')
  card.innerHTML = a.innerHTML
+//  var b = document.getElementsByClassName('ql-editor').value
+// b.innerHTML = ' '
+//  a.innerHTML = ' '
 //  console.log(window.location.href)
   }
 
@@ -62,12 +65,25 @@ console.log(a)
 
   const handleDownload = () => {
     // Create a Blob containing your card data (for example, plain text)
-    const cardData = document.getElementById('card').textContent
-    const blob = new Blob([cardData], { type: "text/plain;charset=utf-8" });
+    const cardData = document.getElementById('result').innerText
+    const blob = new Blob([cardData], { type: "text/html" });
 
     // Use FileSaver to trigger the download
-    saveAs(blob, 'card.txt');
+    // saveAs(blob, 'card.txt');
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'styled_card.html';
+    a.click();
+
+    URL.revokeObjectURL(url);
   };
+  const edit = ()=>{
+    var editor = document.getElementsByClassName('ql-editor')[0]
+    console.log(editor.textContent)
+    handleProcedureContentChange(editor.innerHTML)
+  }
   return (
     <>
     <div className="mt-10">
@@ -80,6 +96,7 @@ console.log(a)
           modules={modules}
           // value={content}
           formats={formats}
+          id="editor"
           placeholder="Write your content ...."
           onChange={handleProcedureContentChange}
           className="rounded-sm "
@@ -99,8 +116,11 @@ console.log(a)
       </div>
       {show ?
       
-      <div className="grid place-items-center mx-auto">
-      <div id="card" className="bg-blue-100 mx-8 p-8  rounded-xl shadow-xl my-2 mb-8 "></div>
+      <div className="grid place-items-center bg-blue-100 w-max p-8  rounded-xl shadow-xl mx-auto">
+      <div id="card" className=" my-2 mb-8 " >
+      </div>
+      {/* <button onChange={edit}>Edit</button> */}
+
       {/* <p onClick={(e)=>navigator.clipboard.writeText(window.location.href)}>Share</p> */}
       <a href="#card" download={true} onClick={handleDownload}>download</a>
       </div>
