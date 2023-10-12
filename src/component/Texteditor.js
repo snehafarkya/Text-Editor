@@ -63,22 +63,22 @@ console.log(a)
   //   console.log(e)
   // }
 
-  const handleDownload = () => {
-    // Create a Blob containing your card data (for example, plain text)
-    const cardData = document.getElementById('result').innerText
-    const blob = new Blob([cardData], { type: "text/html" });
+  // const handleDownload = () => {
+  //   // Create a Blob containing your card data (for example, plain text)
+  //   const cardData = document.getElementById('result').innerText
+  //   const blob = new Blob([cardData], { type: "text/html" });
 
-    // Use FileSaver to trigger the download
-    // saveAs(blob, 'card.txt');
-    const url = URL.createObjectURL(blob);
+  //   // Use FileSaver to trigger the download
+  //   // saveAs(blob, 'card.txt');
+  //   const url = URL.createObjectURL(blob);
 
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'styled_card.html';
-    a.click();
+  //   const a = document.createElement('a');
+  //   a.href = url;
+  //   a.download = 'styled_card.html';
+  //   a.click();
 
-    URL.revokeObjectURL(url);
-  };
+  //   URL.revokeObjectURL(url);
+  // };
   const edit = ()=>{
     var editor = document.getElementsByClassName('ql-editor')[0]
     console.log(editor.textContent)
@@ -116,13 +116,13 @@ console.log(a)
       </div>
       {show ?
       
-      <div className="grid place-items-center bg-blue-100 w-max p-8  rounded-xl shadow-xl mx-auto">
-      <div id="card" className=" my-2 mb-8 " >
+      <div className="grid place-items-center bg-blue-100 w-max p-8  rounded-xl shadow-xl pb-8 mx-auto">
+      <div id="card" className=" my-2 " >
       </div>
       {/* <button onChange={edit}>Edit</button> */}
 
       {/* <p onClick={(e)=>navigator.clipboard.writeText(window.location.href)}>Share</p> */}
-      <a href="#card" download={true} onClick={handleDownload}>download</a>
+      {/* <a href="#card" download={true} onClick={handleDownload}>download</a> */}
       </div>
       :null}
     </div>
