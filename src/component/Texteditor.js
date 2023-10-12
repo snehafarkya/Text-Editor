@@ -107,7 +107,6 @@ console.log(a)
       <div className="mb-10 hidden" id="blog">
       <h1 style={{ textAlign: "center" }} className=" text-blue-900 font-bold text-2xl uppercase " >Preview your blog here</h1>
 
-
       <div className="md:w-[650px] w-[300px] mt-10 rounded-md mx-auto p-1 shadow-lg" id="result">
       </div>
       <button className="px-4 py-2 bg-blue-900 cursor-pointer mt-8 text-white rounded-md hover:bg-blue-800 transition ease-in-out duration-300 hover:scale-[0.98] font-semibold" onClick={handleClick}>Save</button>
