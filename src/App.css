@@ -47,8 +47,8 @@
 }
 
 .ql-container{
-  border: darkblue solid 2px  !important;
-  border-top: none !important;
+  /* border: darkblue solid 2px  !important; */
+  border: none !important;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   height: 70% !important;
@@ -57,9 +57,12 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   padding-top: 20px;
+  
+  margin: 1px;
   background: rgb(219 234 254);
   border: none !important;
-  border: darkblue solid 2px  !important;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.271);
+  /* border-bottom: darkblue solid 2px  !important; */
 
 }
 .ql-editor{

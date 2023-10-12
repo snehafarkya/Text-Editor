@@ -99,7 +99,7 @@ console.log(a)
           id="editor"
           placeholder="Write your content ...."
           onChange={handleProcedureContentChange}
-          className="rounded-sm "
+          className="rounded-xl bg-white border-2 border-blue-900"
           style={{height:'50vh',width:'650px'}}
         >
         </ReactQuill>
