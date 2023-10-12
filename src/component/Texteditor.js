@@ -113,7 +113,6 @@ console.log(a)
       </div>
       </div>
       {show ?
-      
       <div className="grid place-items-center  pb-8 mx-auto">
       <div id="card" className=" my-2 bg-blue-100 mx-6 p-8  rounded-xl shadow-xl " >
       </div>
