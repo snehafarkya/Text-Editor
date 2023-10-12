@@ -57,7 +57,6 @@ console.log(a)
 //  a.innerHTML = ' '
 //  console.log(window.location.href)
   }
-
   // const handleClick = (e)=>{
   //   var card = document.createElement('div').innerHTML = e
   //   console.log(e)
