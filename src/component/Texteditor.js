@@ -43,7 +43,6 @@ const TextEditor = () => {
     var blog  = document.getElementById('blog').style.display = 'block';
     var res = document.getElementById('result').innerHTML = content
     // res.style.display = "none"
-    
   };
   const handleClick = (content)=>{
  setShow(true)
