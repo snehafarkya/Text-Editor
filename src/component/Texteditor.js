@@ -61,7 +61,6 @@ console.log(a)
   //   var card = document.createElement('div').innerHTML = e
   //   console.log(e)
   // }
-
   // const handleDownload = () => {
   //   // Create a Blob containing your card data (for example, plain text)
   //   const cardData = document.getElementById('result').innerText
