@@ -70,3 +70,11 @@
 }
 .ql-toolbar .ql-snow{
 }
+
+.home{
+  background-image: url(https://t3.ftcdn.net/jpg/04/42/06/34/360_F_442063430_OjLo5sHK0twuUk2hCGWpjLphEHiLcamL.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'Young Serif', serif;
+}
