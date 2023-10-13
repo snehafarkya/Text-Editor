@@ -173,7 +173,7 @@ const TextEditor = () => {
   };
   return (
     <>
-      <div className="pt-10">
+      <div className="pt-10 min-h-screen">
         <div className="grid grid-cols-1 md:grid-cols-2 mx-6 gap-y-10 place-content-start md:place-items-start">
           <div className="flex justify-center flex-wrap mx-auto md:w-[650px] w-[300px] ">
             <h1
