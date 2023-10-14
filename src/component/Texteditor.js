@@ -13,7 +13,7 @@ const TextEditor = () => {
       [{ size: ["small", false, "large", "huge"] }, { font: [] }],
       ["bold", "italic", "underline", "strike", "blockquote"],
       // [{ list: "ordered" }, { list: "bullet" }],
-      ["link", "image", "video"],
+      ["link", "image", "video", "H1"],
       [
         { list: "ordered" },
         { list: "bullet" },
@@ -129,6 +129,7 @@ const TextEditor = () => {
     "background",
     "size",
     "video",
+    "H1",
   ];
 
   const handleProcedureContentChange = (content) => {
@@ -218,7 +219,7 @@ const TextEditor = () => {
           <div className="grid place-items-center  pb-8 mx-auto">
             <div
               id="card"
-              className=" my-2 bg-blue-100 mx-6 p-8  rounded-xl shadow-xl "
+              className=" my-2 card mx-6 p-8  rounded-xl shadow-xl "
             ></div>
             {/* <button onChange={edit}>Edit</button> */}
             {/* <p onClick={(e)=>navigator.clipboard.writeText(window.location.href)}>Share</p> */}
