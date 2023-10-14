@@ -9,10 +9,10 @@ export default function Home() {
       </div>
       
       <div className="flex flex-col md:flex-row mx-auto items-center justify-center gap-2 gap-x-16 ">
-      <img src={hero} alt="" className=' rounded-xl drop-shadow-2xl md:order-2' />
+      <img src={hero} alt="" className=' rounded-xl drop-shadow-2xl md:order-2 ' />
 
       <div className=' relative flex flex-col justify-start items-start md:gap-6 gap-4'>
-      <span className='absolute -left-10 -top-9 rotate-[30deg] drop-shadow-xl hidden md:flex'><img src={star} alt="" className='h-12 hover:rotate-[360deg] transition ease-in-out duration-1000 hover:scale-[1.6]' /></span>
+      <span className='absolute -md:left-10 -md:top-9 -left-7 -top-5 rotate-[30deg] drop-shadow-xl  md:flex'><img src={star} alt="star icon" className='md:h-12 h-8 transition ease-in-out duration-1000  animate-spin' /></span>
          <p className='text-blue-700 md:text-5xl text-4xl font-extrabold text-left'>Give your thoughts a <br className='hidden md:flex'/> wing to <span className='font-semibold text-blue-900 underline main'>FLY</span></p>
         <p className='md:text-xl text-lg text-blue-500 w-[80%] text-left font-semibold'>"Unleash Your Inner Wordsmith: Crafting Compelling Blogs Has Never Been Easier!"</p> 
          <a href="#editor"><button className=' bg-blue-700 text-blue-100 px-4 py-3 rounded-md hover:bg-blue-900 font-semibold md:mt-4 text-lg hover:shadow-2xl tracking-wide shadow-lg '>Get Started</button></a> 
