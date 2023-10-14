@@ -10,6 +10,7 @@ const TextEditor = () => {
   const [show, setShow] = useState(false);
   var modules = {
     toolbar: [
+      [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
       [{ size: ["small", false, "large", "huge"] }, { font: [] }],
       ["bold", "italic", "underline", "strike", "blockquote"],
       // [{ list: "ordered" }, { list: "bullet" }],
@@ -133,7 +134,7 @@ const TextEditor = () => {
   ];
 
   const handleProcedureContentChange = (content) => {
-    // console.log("content---->", content);
+    console.log("content---->", content);
 
     var blog = (document.getElementById("blog").style.display = "block");
     var res = (document.getElementById("result").innerHTML = content);
