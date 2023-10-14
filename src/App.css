@@ -75,12 +75,16 @@ html{
 }
 
 .home{
-  background-image: url(https://t3.ftcdn.net/jpg/04/42/06/34/360_F_442063430_OjLo5sHK0twuUk2hCGWpjLphEHiLcamL.jpg);
+  /* background-image: url(https://t3.ftcdn.net/jpg/04/42/06/34/360_F_442063430_OjLo5sHK0twuUk2hCGWpjLphEHiLcamL.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  /* height: 100vh; */
   font-family: 'Crimson Text', serif;
 
 }
 
-
+.main{
+  background: radial-gradient(at 50% 40%, rgb(226, 128, 128), transparent 80%) 0% 0% repeat scroll, radial-gradient(at 50% -47%, rgb(30, 88, 116), transparent 80%) 0% 0% repeat scroll, radial-gradient(at 0% 0%, rgb(65, 46, 129) 0px, transparent 32%) 0% 0% repeat scroll, radial-gradient(at 100% 98%, rgb(155, 84, 53), transparent) 0% 0% repeat scroll, radial-gradient(at 0px 97%, rgb(7, 26, 73), rgb(120, 39, 39)) 0% 0% repeat scroll rgba(15, 44, 148, 0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
