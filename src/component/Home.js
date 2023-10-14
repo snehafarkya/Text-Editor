@@ -8,7 +8,7 @@ export default function Home() {
       </div>
       
       <div className="flex flex-col md:flex-row mx-auto items-center justify-center gap-2 gap-x-16 ">
-      <img src="https://o.remove.bg/downloads/d6934262-0e91-4176-82fc-84f3f91d4be9/image-removebg-preview.png" alt="" className=' rounded-xl drop-shadow-xl md:order-2' />
+      <img src="https://o.remove.bg/downloads/d6934262-0e91-4176-82fc-84f3f91d4be9/image-removebg-preview.png" alt="" className=' rounded-xl drop-shadow-2xl md:order-2' />
 
       <div className=' relative flex flex-col justify-start items-start gap-6'>
       <span className='absolute -left-10 -top-9 rotate-[30deg] drop-shadow-xl hidden md:flex'><img src="https://o.remove.bg/downloads/50c45e9d-edb6-4398-900d-5af656c180bb/png-clipart-star-blue-star-blue-website-removebg-preview.png" alt="" className='h-12 hover:rotate-[360deg] transition ease-in-out duration-1000 hover:scale-[1.6]' /></span>
