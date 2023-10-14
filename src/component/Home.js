@@ -12,7 +12,7 @@ export default function Home() {
       <img src={hero} alt="" className=' rounded-xl drop-shadow-2xl md:order-2 ' />
 
       <div className=' relative flex flex-col md:justify-start justify-center md:items-start md:gap-6 gap-4'>
-      <span className='absolute md:-left-12 md:-top-9 -left-3 -top-5 rotate-[30deg] drop-shadow-xl '><img src={star} alt="star icon" className='md:h-12 h-8 transition ease-in-out duration-1000  animate-spin' /></span>
+      <span className='absolute md:-left-12 md:-top-9 -left-1 -top-5 rotate-[30deg] drop-shadow-xl '><img src={star} alt="star icon" className='md:h-12 h-8 transition ease-in-out duration-1000  animate-spin' /></span>
          <p className='text-blue-700 md:text-5xl text-4xl font-extrabold md:text-left'>Give your thoughts a <br className='hidden md:flex'/> wing to <span className='font-semibold text-blue-900 underline main'>FLY</span></p>
         <p className='md:text-xl text-lg text-blue-500 md:w-[80%] md:text-left font-semibold'>"Unleash Your Inner Wordsmith: Crafting Compelling Blogs Has Never Been Easier!"</p> 
          <a href="#editor"><button className=' bg-blue-700 text-blue-100 px-4 py-3 rounded-md hover:bg-blue-900 font-semibold md:mt-4 text-lg hover:shadow-2xl tracking-wide shadow-lg focus:outline-none focus:ring-0 focus: '>Get Started</button></a> 
