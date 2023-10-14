@@ -13,7 +13,7 @@ export default function Home() {
 
       <div className=' relative flex flex-col justify-start items-start gap-6'>
       <span className='absolute -left-10 -top-9 rotate-[30deg] drop-shadow-xl hidden md:flex'><img src={star} alt="" className='h-12 hover:rotate-[360deg] transition ease-in-out duration-1000 hover:scale-[1.6]' /></span>
-         <p className='text-blue-700 text-5xl font-extrabold text-left'>Give your thoughts a <br className='hidden md:flex'/> wing to <span className='font-semibold text-blue-900 underline main'>FLY</span></p>
+         <p className='text-blue-700 md:text-5xl text-4xl font-extrabold text-left'>Give your thoughts a <br className='hidden md:flex'/> wing to <span className='font-semibold text-blue-900 underline main'>FLY</span></p>
         <p className='text-xl text-blue-600 w-[80%] text-left'>"Unleash Your Inner Wordsmith: Crafting Compelling Blogs Has Never Been Easier!"</p> 
          <a href="#editor"><button className=' bg-blue-700 text-blue-100 px-4 py-3 rounded-md hover:bg-blue-900 font-semibold mt-4 text-lg hover:shadow-2xl tracking-wide shadow-lg '>Get Started</button></a> 
       </div>
