@@ -4,8 +4,8 @@ import star from '../assets/star.png'
 export default function Home() {
   return (
     <div className='home flex flex-col md:justify-center mx-6 md:h-screen'>
-      <div className=" flex-col md:flex-row md:mx-auto mx-6 items-center justify-center gap-2 gap-x-16 mt-12 ">
-      <p class="bg-blue-100  text-blue-800  font-bold mr-2 px-2.5 py-4 text-xl  rounded-lg shadow-lg border-blue-400 border-2 cursor-pointer hover:shadow-2xl transition ease-in-out duration-300">Welcome to CanvasMaster <span >✍</span></p>
+      <div className=" flex-col md:flex-row md:mx-auto mx-6 items-center justify-center gap-2 gap-x-16  mt-12 md:mt-0">
+      <p class="bg-blue-100  text-blue-800  font-bold mr-2 px-2.5 py-4 text-xl  rounded-lg shadow-lg border-blue-400 border-2 cursor-pointer hover:shadow-2xl transition ease-in-out duration-300">Welcome to CanvasMaster <span >✍</span>, captivate your thoughts</p>
       </div>
       
       <div className="flex flex-col md:flex-row mx-auto items-center justify-center gap-2 gap-x-16 ">
