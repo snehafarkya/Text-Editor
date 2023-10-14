@@ -5,6 +5,8 @@
   background-size: cover;
   min-height: 100vh;
   max-height: max-content;
+  font-family: 'Crimson Text', serif;
+
 }
 
 .App-logo {

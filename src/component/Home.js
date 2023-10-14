@@ -15,7 +15,7 @@ export default function Home() {
       <span className='absolute -md:left-10 -md:top-9 -left-3 -top-5 rotate-[30deg] drop-shadow-xl  md:flex'><img src={star} alt="star icon" className='md:h-12 h-8 transition ease-in-out duration-1000  animate-spin' /></span>
          <p className='text-blue-700 md:text-5xl text-4xl font-extrabold md:text-left'>Give your thoughts a <br className='hidden md:flex'/> wing to <span className='font-semibold text-blue-900 underline main'>FLY</span></p>
         <p className='md:text-xl text-lg text-blue-500 md:w-[80%] md:text-left font-semibold'>"Unleash Your Inner Wordsmith: Crafting Compelling Blogs Has Never Been Easier!"</p> 
-         <a href="#editor"><button className=' bg-blue-700 text-blue-100 px-4 py-3 rounded-md hover:bg-blue-900 font-semibold md:mt-4 text-lg hover:shadow-2xl tracking-wide shadow-lg '>Get Started</button></a> 
+         <a href="#editor"><button className=' bg-blue-700 text-blue-100 px-4 py-3 rounded-md hover:bg-blue-900 font-semibold md:mt-4 text-lg hover:shadow-2xl tracking-wide shadow-lg focus:outline-none focus:ring-0 focus: '>Get Started</button></a> 
       </div>
       </div>
         {/* <p className='text-blue-300 text-2xl '> A platform for you, by you , from you </p> */}
