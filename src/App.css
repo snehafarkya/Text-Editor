@@ -98,5 +98,6 @@ html{
 @media screen and (max-width:600px) {
   .ql-container{
     height: 50% !important;
+    overflow: hidden;
   }
 }
